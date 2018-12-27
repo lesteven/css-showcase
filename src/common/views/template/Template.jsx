@@ -9,11 +9,8 @@ class Template extends Component {
       <Fragment>
         <NavBar />
         <div className = 'max-width-two'>
-          <div className = 'page-wrapper'>
-            { this.props.children }
-          </div>
+          { this.props.children }
         </div>
-        <div className = 'bottom'></div>
       </Fragment>
     )
   }  

@@ -22,12 +22,14 @@ html, body, #root {
 .max-width-two {
   margin: auto;
   max-width: 1024px;
+  height: 100%;
 }
 .top-pad {
   padding-top: 8%;
 }
 .page-wrapper {
   padding: 5%;
+  height: inherit;
 }
 .bottom {
   height: 200px;

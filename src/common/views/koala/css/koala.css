@@ -1,0 +1,102 @@
+:root {
+  --light-blue: #25A9FC;
+  --dark-grey: #819caf;
+}
+.koala-wrapper {
+  background-color: var(--light-blue);
+  width: 100%;
+  height: 100%;
+  padding-top: 10%;
+}
+.koala-box {
+  width: 600px;
+  height: 420px;
+  position: relative;
+  margin: auto;
+}
+.koala-head {
+  position: absolute;
+  left: 25%;
+  top: 16.5%;
+  width: 50%;
+  height: 67%;
+  background-color: #A6BECF;
+  border-radius: 50%; 
+}
+.koala-head-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border-radius: inherit;
+}
+.koala-ear {
+  position: inherit;
+  width: 60%;
+  height: 65%;
+  background: inherit;
+  border-radius: 50%;
+}
+.ear-left {
+  left: -20%;
+}
+.ear-right {
+  right: -20%;
+}
+.inner-ear {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background: var(--dark-grey);
+  border-radius: 50%;
+  top: 10%;
+  left: 10%;
+}
+.koala-eye {
+  position: inherit;
+  background: white;
+  border-radius: inherit;
+  width: 30%;
+  height: 32%;
+  top: 25%;
+}
+.eye-left {
+  left: 21%;
+}
+.eye-right {
+  right: 21%;
+}
+.koala-pupil {
+  position: inherit;
+  border-radius: inherit;
+  background: #27354A;
+  width: 30%;
+  height: 30%;
+  left: 35%;
+  top: 35%;
+}
+.koala-nose {
+  position: absolute;
+  height: 40%;
+  width: 25%;
+  border-radius: 50px;
+  background: #BE845F;
+  top: 45%;
+  left: 37.5%;
+}
+.koala-hair {
+  position: inherit;
+  background: inherit;
+  width: 20%;
+  height: 20%;  
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.hair-left {
+  left: 30%;
+  top: -8%;
+}
+.hair-right {
+  right: 30%;
+  top: -4%;
+}

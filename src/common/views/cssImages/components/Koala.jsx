@@ -1,8 +1,8 @@
-import React, { Component, Fragment } from 'react';
-import styles from './css/koala.css';
+import React, { Component } from 'react';
+import styles from '../css/koala.css';
 
 
-class KoalaPage extends Component {
+class Koala extends Component {
   render() {
     return (
       <div className = 'koala-wrapper'>
@@ -34,4 +34,4 @@ class KoalaPage extends Component {
 
 
 
-export default KoalaPage;
+export default Koala;

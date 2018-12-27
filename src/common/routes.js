@@ -1,8 +1,7 @@
 import makeRouteObject from './utils/makeRouteObject';
-import HomePage from './views/home/HomePage';
 import AboutPage from './views/about/AboutPage';
 import ContactPage from './views/contact/ContactPage';
-import KoalaPage from './views/koala/KoalaPage';
+import ImagesPage from './views/cssImages/ImagesPage';
 
 
 const prefix = '';
@@ -18,15 +17,13 @@ const aboutTitle = 'About';
 const contactURL = '/contact';
 const contactTitle = 'Contact';
 
-const koalaURL = '/koala';
-const koalaTitle = 'Koala';
 
 const routes = {
   routes: [
     makeRouteObject(
       prefix,
       homeURL,
-      HomePage,
+      ImagesPage,
       exactTrue,
       homeTitle,
     ),
@@ -43,13 +40,6 @@ const routes = {
       ContactPage,
       exactTrue,
       contactTitle,
-    ),
-    makeRouteObject(
-      prefix,
-      koalaURL,
-      KoalaPage,
-      exactTrue,
-      koalaTitle,
     ),
   ],
 };

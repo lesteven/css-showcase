@@ -7,7 +7,7 @@
   --light-black: #242e37;
 }
 .tribune-wrapper {
-  background: var(--purple-sky);
+  background: linear-gradient(white, var(--purple-sky));
 }
 .tribune-box {
   position: relative;

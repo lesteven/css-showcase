@@ -1,0 +1,176 @@
+:root {
+  --dark-green: #84d1c8;
+  --purple-ledge: #edede1;
+  --brick-red: #cba072;
+  --red-sign: #FA8574;
+  --purple-sky: #145caf;
+  --light-black: #242e37;
+}
+.tribune-wrapper {
+  background: var(--purple-sky);
+}
+.tribune-box {
+  position: relative;
+  height: 600px;
+  width: 600px;
+  margin: auto;
+}
+.tribune-tower {
+  position: absolute;
+  background: var(--brick-red);
+  height: 50%;
+  width: 40%;
+  bottom: 0%;
+  left: 30%;
+}
+.tribune-logo {
+  position: absolute;
+  background: var(--purple-ledge);
+  width: 45%;
+  height: 12%;
+  bottom: 15%;
+  left: 27.5%;
+  z-index: 2;
+  color: white;
+}
+.tribune-logo h1 {
+  -webkit-text-stroke-color: var(--brick-red);
+  -webkit-text-stroke-width: 1px;
+  font-size: 325%; 
+  margin: 0;
+}
+
+.tribune-top {
+  position: absolute;
+  background: var(--purple-ledge);
+  width: 45%;
+  height: 15%;
+  bottom: 50%;
+  left: 27.5%;
+  -webkit-clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%);
+  clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%);
+  z-index: 2;
+}
+.tribune-triangle {
+  position: absolute;
+  background: var(--dark-green);
+  width: 35%;
+  height: 30%;
+  bottom: 60%;
+  left: 32.5%;
+  -webkit-clip-path: polygon(40% 0, 60% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(40% 0, 60% 0, 100% 100%, 0% 100%);
+  z-index: 1;
+}
+.tribune-clock {
+  position: absolute;
+  background: var(--light-black);
+  width: 20%;
+  height: 50%;
+  border-radius: 50%;
+  top: 15%;
+  left: 40%;
+}
+.small-window {
+  position: inherit;
+  background: var(--purple-ledge);
+  width: 20%;
+  height: 20%;
+}
+.window-left, .window-mid, .window-right {
+  bottom: 5%;
+}
+.window-left {
+  left: 10%;
+}
+.window-mid {
+  left: 40%;
+}
+.window-right {
+  left: 70%;
+}
+.big-window {
+  position: inherit;
+  background: var(--purple-ledge);
+  width: 20%;
+  height: 35%;
+}
+.big-window-left, .big-window-mid, .big-window-right {
+  bottom: 60%;
+}
+.big-window-left {
+  left: 10%;
+}
+
+.big-window-right {
+  right: 10%;
+}
+.big-window-mid {
+  left: 40%;
+}
+.tribune-dot {
+  position: inherit;
+  background: var(--light-black);
+  border-radius: 50%;
+  width: 10%;
+  height: 5%;
+  z-index: 3;
+}
+.dot-bot-left, .dot-bot-right {
+  bottom: 28%;
+}
+.dot-bot-left {
+  left: 30%;
+}
+.dot-bot-right {
+  right: 30%;
+}
+.dot-mid {
+  bottom: 53%;
+  right: 45%;
+}
+.dot-top {
+  top: 20%;
+  right: 45%;
+}
+.cloud {
+  position: absolute;
+  background: white;
+  width: 40%;
+  height: 20%;
+-webkit-clip-path: polygon(46% 32%, 79% 24%, 92% 38%, 91% 60%, 76% 65%, 50% 62%, 23% 67%, 8% 59%, 8% 35%, 26% 29%);
+clip-path: polygon(46% 32%, 79% 24%, 92% 38%, 91% 60%, 76% 65%, 50% 62%, 23% 67%, 8% 59%, 8% 35%, 26% 29%);
+}
+.cloud-left {
+  left: 0%;
+  top: 0%;
+  animation: cloud-left 15s infinite;
+}
+.cloud-right {
+  top: 5%;
+  right: 0%;
+  animation: cloud-right 15s infinite;
+}
+
+@keyframes cloud-left {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: 5%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+@keyframes cloud-right {
+  0% {
+    right: 0%;
+  }
+  50% {
+    right: 5%;
+  }
+  100% {
+    right: 0%;
+  }
+}

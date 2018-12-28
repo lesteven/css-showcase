@@ -8,9 +8,7 @@ class Template extends Component {
     return (
       <Fragment>
         <NavBar />
-        <div className = 'max-width-two'>
           { this.props.children }
-        </div>
       </Fragment>
     )
   }  

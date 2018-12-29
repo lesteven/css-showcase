@@ -174,3 +174,15 @@ clip-path: polygon(46% 32%, 79% 24%, 92% 38%, 91% 60%, 76% 65%, 50% 62%, 23% 67%
     right: 0%;
   }
 }
+
+/* MOBILE VIEW */
+
+@media only screen and (max-width:600px) {
+  .tribune-box {
+    width: 300px;
+    height: 300px; 
+  }
+  .tribune-logo h1 {
+    font-size: 150%;
+  }
+}

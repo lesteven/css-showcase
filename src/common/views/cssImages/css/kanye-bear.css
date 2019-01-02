@@ -1,0 +1,179 @@
+:root {
+  --purple: #73367c;
+  --light-purple: #A24D77;
+  --brown: #89551b;
+  --light-pink: #d9a985;
+  --brown-iris: #34160c;
+  --blue-iris: #4c8282;
+  --eye-light-yellow: #d7b400;
+  --eye-light-pink: #ef818c;
+  --kanye-pupil-left: #a88295;
+  --kanye-pupil-right: #dfb09e;
+  --iris-two-left: #df256e;
+  --short-right: #e0dc61;;
+  --short-left: #ffe3e8;
+  --kanye-mouth: #e2b58c;
+  --kanye-nose: #603107;
+}
+.kanye-wrapper {
+  background: linear-gradient(var(--purple), var(--light-purple));
+}
+.kanye-box {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin: auto;
+}
+.kanye-head {
+  position: absolute;
+  background: var(--brown);
+  border-radius: 50% 50% 35% 35%;
+  width: 50%;
+  height: 70%;
+  left: 25%;
+  top: 20%;
+}
+
+.kanye-ear {
+  position:inherit;
+  background: inherit;
+  border-radius: inherit;
+  width: 30%;
+  height: 30%;
+}
+.kanye-ear-left {
+  left: -5%;
+}
+.kanye-ear-right {
+  right: -5%;
+}
+.kanye-inner-ear {
+  position:inherit;
+  background: var(--light-pink);
+  border-radius: inherit;
+  width: 80%;
+  height: 80%; 
+  left: 10%;
+  top: 10%;
+}
+
+.kanye-head-layer {
+  position: absolute;
+  background: inherit;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+.kanye-eye {
+  position: absolute;
+  border-radius: 50%;
+  height: 35%;
+  width: 25%;
+  background: white;
+  top: 25%;
+}
+.kanye-eye-left {
+  left: 15%;
+  transform: rotate(15deg);
+}
+.kanye-eye-right {
+  right: 15%;
+  transform: rotate(-15deg);
+}
+.kanye-eye-iris {
+  position: inherit;
+  border-radius: 50%;
+  height: 90%;
+  width: 80%;
+  left: 10%;
+  top: 1%;
+}
+.kanye-iris-left {
+  background: var(--brown-iris);
+}
+.kanye-iris-right {
+  background: var(--blue-iris);
+}
+.kanye-long-light {
+  position: inherit;
+  border-radius: inherit;
+  width: 20%;
+  height: 40%;
+  left: 35%;
+  top: 1%;
+}
+.long-left {
+  background: var(--eye-light-yellow);
+}
+.long-right {
+  background: var(--eye-light-pink);
+}
+.kanye-pupil {
+  position: inherit;
+  border-radius: inherit;
+  width: 20%;
+  height: 20%;
+  left: 40%;
+  top: 40%;
+}
+.kanye-pupil-left {
+  background: var(--kanye-pupil-left);
+}
+.kanye-pupil-right {
+  background: var(--kanye-pupil-right);
+}
+.kanye-iris-two {
+  position: inherit;
+  border-radius: inherit;
+  width: 90%;
+  height: 90%;
+  top: 10%; 
+  left: 5%;
+}
+.iris-two-left {
+  background: var(--iris-two-left);
+}
+.iris-two-right {
+  background: black;
+}
+.kanye-short-light {
+  position: inherit;
+  border-radius: inherit;
+  height: 23%;
+  width: 20%;
+  bottom: 18%;
+  right: 20%;
+}
+.short-left {
+  background: var(--short-left);
+}
+.short-right {
+  background: var(--short-right);
+}
+.kanye-mouth {
+  position: absolute;
+  width: 50%;
+  height: 35%;
+  left: 25%;
+  bottom: 5%;
+  background: var(--kanye-mouth);
+  border-radius: 100% 100% 90% 90%;
+}
+
+.kanye-nose {
+  position: inherit;
+  width: 20%;
+  height: 20%;
+  top: 5%;
+  left: 40%;
+  background: var(--kanye-nose);
+  border-radius: 50%;
+}
+/* MOBILE VIEW */
+
+@media only screen and (max-width:600px) {
+  .kanye-box {
+    width: 300px;
+    height: 200px; 
+  }
+}

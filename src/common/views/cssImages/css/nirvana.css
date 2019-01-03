@@ -1,0 +1,123 @@
+:root {
+  --nirvana-black: #010101;
+  --nirvana-yellow: #ffec01;
+}
+.nirvana-wrapper {
+  background: var(--nirvana-black);
+}
+.nirvana-box {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+.nirvana-head {
+  position: absolute;
+  width: 75%;
+  height: 75%;
+  left: 12.5%;
+  top: 12.5%;
+  background: var(--nirvana-yellow);
+  border-radius: 50%;
+  transform: rotate(-10deg);
+}
+.nirvana-inner-circle {
+  position: inherit;
+  width: 90%;
+  height: 90%;
+  background: var(--nirvana-black);
+  top: 5%;
+  left: 5%;
+  border-radius: inherit;
+}
+.nirvana-eye {
+  position: inherit;
+  width: 20%;
+  height: 20%;
+  top: 20%;
+}
+.nirvana-eye-left {
+  left: 20%;
+}
+.nirvana-eye-right {
+  right: 20%;
+}
+.nirvana-bar {
+  width: 100%;
+  height: 10%;
+  position: inherit;
+  background: var(--nirvana-yellow);
+  top: 45%;
+}
+.bar-left {
+  transform: rotate(45deg);
+}
+.bar-right {
+  transform: rotate(-45deg);
+}
+.nirvana-lip {
+  position: inherit;
+  background: var(--nirvana-yellow);
+  width: 70%;
+  height: 30%; 
+  bottom: 20%;
+  left: 15%;
+  border-radius: 0 0 100% 100%;
+}
+.nirvana-lip-two {
+  position: inherit;
+  background: var(--nirvana-black);
+  width: 90%;
+  height: 95%;
+  left: 5%;
+  top: -5%;
+  border-radius: inherit;
+}
+.nirvana-lip-bar {
+  position: inherit;
+  width: 15%;
+  height: 8%;
+  background: var(--nirvana-yellow);
+}
+.lip-bar-left {
+  left: -5%;
+}
+.lip-bar-right {
+  right: -5%;
+}
+.nirvana-tongue {
+  position: inherit;
+  background: inherit;
+  width: 15%;
+  height: 50%;
+  right: 10%;
+  bottom: -23%;
+  transform: rotate(-45deg);
+  border-radius: 0 200% 100% 100%;
+}
+.nirvana-tongue-two {
+  position: inherit;
+  background: var(--nirvana-black);
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  bottom: 10%;
+  border-radius: inherit;
+}
+.nirvana-tongue-line {
+  position: inherit;
+  background: var(--nirvana-yellow);
+  width: 30%;
+  height: 70%;
+  left: 30%;
+  border-radius: 0 100% 100% 100%;
+}
+
+/* MOBILE VIEW */
+
+@media only screen and (max-width:600px) {
+  .nirvana-box {
+    width: 200px;
+    height: 200px; 
+  }
+}

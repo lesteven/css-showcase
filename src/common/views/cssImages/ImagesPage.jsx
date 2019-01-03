@@ -3,6 +3,8 @@ import Tribune from './components/Tribune';
 import KanyeBear from './components/KanyeBear';
 import Koala from './components/Koala';
 import Diamond from './components/Diamond';
+import Nirvana from './components/Nirvana';
+
 
 class ImagePage extends Component {
   render() {
@@ -10,6 +12,7 @@ class ImagePage extends Component {
       <>
         <KanyeBear />
         <Tribune />
+        <Nirvana />
         <Koala />
         <Diamond />
       </>

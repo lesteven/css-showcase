@@ -1,5 +1,5 @@
 :root {
-  --egg-background: #f4f4f4;
+  --egg-background: #7da7b9;
   --pan: #232122;
   --pan-outer: #4d4a43;
   --pan-handle: #ebe9da;
@@ -38,9 +38,9 @@
   position: absolute;
   height: 35%;
   width: 10%;
-  right: 10%;
+  right: 11%;
   bottom: 20%;
-  transform: rotate(-77deg);
+  transform: rotate(-75deg);
 }
 .handle-top {
   -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);

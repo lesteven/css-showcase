@@ -11,8 +11,8 @@ class ImagePage extends Component {
   render() {
     return (
       <>
-        <Eggs />
         <KanyeBear />
+        <Eggs />
         <Tribune />
         <Nirvana />
         <Koala />

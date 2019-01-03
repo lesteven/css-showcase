@@ -1,0 +1,101 @@
+:root {
+  --egg-background: #f4f4f4;
+  --pan: #232122;
+  --pan-outer: #4d4a43;
+  --pan-handle: #ebe9da;
+  --egg-white: #f7f7ea;
+  --egg-yolk: #f9ea07;
+}
+.egg-wrapper {
+  background: var(--egg-background);
+  overflow: hidden;
+}
+.egg-box {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin: auto;
+}
+.pan {
+  position: absolute;
+  width: 40%;
+  height: 60%;
+  top: 20%;
+  left: 35%;
+  background: var(--pan-outer);
+  border-radius: 50%;
+}
+.pan-inner {
+  position: absolute;
+  height: 95%;
+  width: 95%;
+  background: var(--pan);
+  border-radius: inherit;
+  left: 2.5%;
+  top: 2.5%;
+}
+.pan-handle {
+  position: absolute;
+  height: 35%;
+  width: 10%;
+  right: 10%;
+  bottom: 20%;
+  transform: rotate(-77deg);
+}
+.handle-top {
+  -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);  
+  background: var(--pan-handle);
+  width: 100%;
+  height: 50%;
+  position: absolute;
+}
+.handle-bottom {
+  position: absolute;
+  background: var(--pan-handle);
+  width: 60%;
+  height: 100%;
+  left: 20%;
+  border-radius: 0 0 30% 30%;
+}
+.egg {
+  position: absolute;
+  background: var(--egg-white);
+  border-radius: 50%;
+  width: 20%;
+  height: 20%;
+}
+.egg-left {
+  left: 20%;
+  top: 20%;
+}
+.egg-yolk {
+  position: inherit;
+  border-radius: inherit;
+  background: var(--egg-yolk);
+  width: 60%;
+  height: 60%;
+  left: 20%;
+  top: 20%;
+} 
+.egg-right {
+  top: 25%;
+  right: 18%;
+}
+.egg-bot-left {
+  bottom: 15%;
+  left: 25%;
+}
+.egg-bot-right {
+  bottom: 20%;
+  right: 15%;
+}
+
+/* MOBILE VIEW */
+
+@media only screen and (max-width:600px) {
+  .egg-box {
+    width: 300px;
+    height: 200px; 
+  }
+}

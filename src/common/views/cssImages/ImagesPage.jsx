@@ -4,12 +4,14 @@ import KanyeBear from './components/KanyeBear';
 import Koala from './components/Koala';
 import Diamond from './components/Diamond';
 import Nirvana from './components/Nirvana';
+import Eggs from './components/Eggs';
 
 
 class ImagePage extends Component {
   render() {
     return (
       <>
+        <Eggs />
         <KanyeBear />
         <Tribune />
         <Nirvana />

@@ -1,0 +1,58 @@
+:root {
+  --pancake-plate: #d3d4d2;
+  --pancake: #df9a4c;
+  --pancake-inner: #fafbf5;
+  --plate-inner: #eff2f7;
+} 
+
+.pancake-box {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  height: 30%;
+  width: 20%;
+  background: var(--pancake-plate);
+  border-radius: 50%;
+}
+.plate-inner {
+  position: relative;
+  top: 5%;
+  left: 5%;
+  height: 90%;
+  width: 90%;
+  background: var(--plate-inner);
+  border-radius: 50%;
+}
+.pancake {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  background: var(--pancake-inner);
+  border-radius: inherit;
+}
+.pancake-inner {
+  background: var(--pancake);
+  position: absolute;
+  border-radius: inherit;
+  width: 90%;
+  height: 90%;
+  left: 5%;
+  top: 5%;
+}
+.pancake-left {
+  top: 8%;
+  left: 13%;
+}
+.pancake-right {
+  right: 10%;
+  bottom: 8%;
+}
+.butter {
+  position: absolute;
+  width: 15%;
+  height: 15%;
+  background: yellow;
+  right: 37%;
+  bottom: 35%;
+  border-radius: 20%;
+}

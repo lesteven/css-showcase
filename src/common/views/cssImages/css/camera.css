@@ -29,23 +29,26 @@
   background: var(--camera-body); 
   left: 20%;
   top: 25%;
+  border-radius: 5px 0 5px 5px;
 }
 .camera-top {
   position: inherit;
   width: 100%;
   height: 15%;
   background: var(--camera-top);
+  border-top-left-radius: 5px;
 }
 .camera-top-right {
   position: inherit;
   width: 60%;
   height: 70%;
   background: inherit;
-  top: -70%;
+  top: -65%;
   right: 0;
 -webkit-clip-path: polygon(12% 0, 100% 0%, 100% 100%, 0 100%);
 clip-path: polygon(12% 0, 100% 0%, 100% 100%, 0 100%);
   z-index: 2;
+  border-radius: 5px 5px 0 0;
 }
 .camera-lense {
   position: absolute;
@@ -135,4 +138,11 @@ clip-path: polygon(12% 0, 100% 0%, 100% 100%, 0 100%);
   top: -30%;
   border-radius: 50%;
   z-index: 3;
+}
+/* MOBILE VIEW */
+@media only screen and (max-width:600px) {
+  .camera-box {
+    width: 300px;
+    height: 200px; 
+  }
 }

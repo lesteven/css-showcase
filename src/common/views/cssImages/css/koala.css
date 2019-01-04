@@ -100,7 +100,6 @@
 }
 
 /* MOBILE VIEW */
-
 @media only screen and (max-width:600px) {
   .koala-box {
     width: 300px;

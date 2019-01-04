@@ -88,6 +88,9 @@ clip-path: polygon(12% 0, 100% 0%, 100% 100%, 0 100%);
   top: 25%;
   background: var(--lense-seven);
 }
+.camera-right-button, .camera-mid-button, .camera-left-button, .mid-grip {
+  border-radius: 4px;
+}
 .camera-right-button {
   position: inherit;
   width: 15%;
@@ -115,10 +118,10 @@ clip-path: polygon(12% 0, 100% 0%, 100% 100%, 0 100%);
 .camera-left-button {
   position: inherit;
   width: 14%;
-  height: 30%;
+  height: 33%;
   background: var(--left-button);
   left: 2%;
-  top: -30%;
+  top: -33%;
 }
 .camera-flash {
   position: inherit;

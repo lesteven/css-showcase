@@ -1,0 +1,46 @@
+:root {
+  --hamburger-bg: #c3e8bd;
+  --hamburger-bar: #040403;
+}
+.hamburger-wrapper {
+  background: var(--hamburger-bg);
+  padding: 10%;
+}
+.hamburger-box {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  margin: auto;
+  position: relative; 
+  cursor: pointer;
+}
+.hamburger-bar {
+  width: 100%;
+  height: 15%;
+  background: var(--hamburger-bar);
+  position: absolute;
+  transition: all 1s;
+}
+.bar-top {
+  top: 10%;
+}
+.bar-mid {
+  top: 42.5%; 
+}
+.bar-bot {
+  bottom: 10%;
+}
+
+.hamburger-clicked > .bar-bot {
+  transform-origin: bottom left;
+  transform: rotate(-45deg);
+  left: 20%;
+}
+.hamburger-clicked > .bar-top {
+  transform-origin: top left;
+  transform: rotate(45deg);
+  left: 20%;
+}
+.hamburger-clicked > .bar-mid {
+  background: transparent;
+}

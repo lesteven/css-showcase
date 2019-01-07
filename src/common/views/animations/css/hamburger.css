@@ -13,6 +13,7 @@
   margin: auto;
   position: relative; 
   cursor: pointer;
+  border: 3px solid white;
 }
 .hamburger-bar {
   width: 100%;
@@ -32,14 +33,12 @@
 }
 
 .hamburger-clicked > .bar-bot {
-  transform-origin: bottom left;
-  transform: rotate(-45deg);
-  left: 20%;
+  transform-origin: center;
+  transform: translateY(-215%) rotate(-45deg);
 }
 .hamburger-clicked > .bar-top {
-  transform-origin: top left;
-  transform: rotate(45deg);
-  left: 20%;
+  transform-origin: center;
+  transform: translateY(215%) rotate(45deg);
 }
 .hamburger-clicked > .bar-mid {
   background: transparent;

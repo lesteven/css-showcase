@@ -12,6 +12,7 @@
   margin: auto;
   cursor: pointer;
   transition: all 1s;
+  -webkit-tap-highlight-color: transparent;
 }
 .ham2-bar {
   position: absolute;
@@ -21,7 +22,6 @@
   left: 0%;
   top: 42.5%;
   transition: all 1s;
-  z-index:2;
 }
 .hamburger2-box::after {
   position: absolute;

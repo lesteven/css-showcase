@@ -4,7 +4,7 @@
 }
 .hamburger-wrapper {
   background: var(--hamburger-bg);
-  padding: 10%;
+  padding: 50px;
 }
 .hamburger-box {
   width: 150px;

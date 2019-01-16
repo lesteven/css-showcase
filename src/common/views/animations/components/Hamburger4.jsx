@@ -19,7 +19,10 @@ class Hamburger4 extends Component {
     const { clicked } = this.state;
     return (
       <>
-        <Menu menuArr = { menuArr } clicked = { clicked }/>
+        <Menu menuArr = { menuArr }
+              clicked = { clicked }
+              click = { this.click }
+          />
         <div className = 'ham4-wrapper'>
           <div className = {clicked? 
             'hamburger4-box hamburger4-box-clicked':'hamburger4-box' }

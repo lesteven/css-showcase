@@ -1,0 +1,64 @@
+:root {
+ --ham4: #E59500;
+}
+.ham4-top-wrapper {
+  position: relative;
+}
+.hamburger4-box {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  cursor: pointer;
+  z-index: 4;
+}
+.ham4 {
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  background: white; 
+  left: 0%;
+  top: 42.5%;
+}
+/* before clicked */
+.ham4 {
+  transition: all 1s;
+}
+.hamburger4-box::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 15%;
+  background: white; 
+  left: 0%;
+  top: 10%;
+  transition: transform .5s, top .5s .5s;
+}
+.hamburger4-box::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 15%;
+  background: white; 
+  left: 0%;
+  bottom: 10%;
+  transition: transform .5s, bottom .5s .5s;
+}
+
+/* after clicked */
+.hamburger4-box-clicked::before {
+  transform-origin: center;
+  top: 42.5%;
+  transform: rotate(45deg);
+  transition: top .5s, transform .5s .5s;
+}
+
+.hamburger4-box-clicked::after {
+  transform-origin: center;
+  bottom: 42.5%;
+  transform: rotate(-45deg);
+  transition: bottom .5s, transform .5s .5s;
+}
+.hamburger4-box-clicked > span {
+  background: transparent;
+}
+

@@ -1,0 +1,36 @@
+:root {
+  --menu-bg: #85BAA1; 
+}
+.menu {
+  background: var(--menu-bg);
+  font-size: 20px;
+  padding: 100px 5% 5% 5%;
+  flex-direction: column;
+  text-align: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 3;
+  transition: all 1s;
+  display: flex;
+}
+.menu * {
+  text-decoration: none;
+  color: #fdfdfd;
+  padding: 2%;
+}
+.menu-off {
+  width: 0vw;
+  opacity: 0;
+}
+.menu-on {
+  width: 100vw;
+  opacity: 1;
+}
+.menu-off * {
+  display: none;
+} 
+.menu-on * {
+  display: block;
+}

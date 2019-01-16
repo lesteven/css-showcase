@@ -1,0 +1,12 @@
+:root {
+  --ham-bg: #52B788;
+}
+.ham-slide {
+  background: var(--ham-bg);
+  position: relative;
+}
+.ham-wrapper {
+  display: flex;
+  padding: 3% 5% 3% 3%;
+  justify-content: flex-end;
+}

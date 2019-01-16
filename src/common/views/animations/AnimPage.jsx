@@ -8,7 +8,9 @@ class AnimPage extends Component {
   render() {
     return (
       <>
-        <h2> Click on icon to see transition/animation! </h2>
+        <h2>
+          Click on the icons to see the transitions & animations! 
+        </h2>
         <Hamburger3 />
         <Hamburger />
         <Hamburger2 />

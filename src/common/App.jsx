@@ -7,9 +7,13 @@ import Template from './views/template/Template';
 
 class App extends Component {
   render() {
+    const { location } = this.props;
     return (
       <Template>
-        <MappedRoutes routes = { routes.routes } />
+        <MappedRoutes 
+          routes = { routes.routes } 
+          location = { location }
+          />
       </Template>
     )
   }
@@ -17,4 +21,4 @@ class App extends Component {
 
 
 
-export default App;
+export default withRouter(App);

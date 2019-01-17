@@ -1,15 +1,17 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import NavBar from './components/NavBar';
 import Banner from './components/Banner';
+import { withRouter } from 'react-router';
+import style from './css/template.css';
 
 class Template extends Component {
 
   render() {
     return (
-      <Fragment>
+      <>
         <NavBar />
-          { this.props.children }
-      </Fragment>
+        { this.props.children }
+      </>
     )
   }  
 }

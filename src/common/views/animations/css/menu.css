@@ -4,7 +4,6 @@
 .menu {
   background: var(--menu-bg);
   font-size: 20px;
-  padding: 100px 5% 5% 5%;
   flex-direction: column;
   text-align: right;
   position: absolute;
@@ -26,6 +25,7 @@
 .menu-on {
   width: 100vw;
   opacity: 1;
+  padding: 100px 5% 5% 5%;
 }
 .menu-off * {
   display: none;

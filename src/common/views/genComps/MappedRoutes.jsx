@@ -4,11 +4,10 @@ import ErrorPage from './ErrorPage';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 function MappedRoutes({ routes, location }) {
-  const currentKey = location.pathname.split('/')[1] || '/'
   return (
     <TransitionGroup>
       <CSSTransition
-        key = { currentKey }
+        key = { location.pathname }
         classNames = 'fade'
         timeout = { {enter: 300, exit: 0 } }
         appear >

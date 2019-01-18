@@ -4,6 +4,7 @@ import Hamburger2 from './components/Hamburger2';
 import Hamburger3 from './components/Hamburger3';
 import HamSlide from './components/HamSlide';
 import menuData from './menuData';
+import Loading from './components/Loading';
 
 
 class AnimPage extends Component {
@@ -14,6 +15,7 @@ class AnimPage extends Component {
           Click on the icons to see the transitions & animations! 
         </h2>
         <HamSlide menuArr = { menuData }/>
+        <Loading />
         <Hamburger3 />
         <Hamburger />
         <Hamburger2 />

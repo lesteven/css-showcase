@@ -1,0 +1,47 @@
+:root {
+  --loading-bg: #387780;
+  --loader: #DBD4D3;
+}
+
+.loading-wrapper {
+  background: var(--loading-bg);
+  padding: 5%;
+}
+.load-box {
+  height: 150px;
+  position: relative;
+  width: 150px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.loading, .load-box::before, .load-box::after {
+  width: 20%;
+  height: 80%;
+  background: var(--loader); 
+  position: absolute;
+}
+.loading {
+  left: 0;
+  animation: move 1s infinite 0s linear;
+}
+.load-box::before {
+  content: "";
+  left: 40%;
+  animation: move 1s infinite .1s linear;
+}
+.load-box::after {
+  content: "";
+  right: 0;
+  animation: move 1s infinite .2s linear;
+}
+
+@keyframes move {
+  0%, 100%{
+    height: 80%;
+  }
+  50% {
+    height: 20%;
+  }
+}
+

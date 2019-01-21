@@ -6,7 +6,6 @@ import HamSlide from './components/HamSlide';
 import menuData from './menuData';
 import Loading from './components/Loading';
 
-
 class AnimPage extends Component {
   render() {
     return (
@@ -15,10 +14,10 @@ class AnimPage extends Component {
           Click on the icons to see the transitions & animations! 
         </h2>
         <HamSlide menuArr = { menuData }/>
-        <Loading />
         <Hamburger3 />
-        <Hamburger />
         <Hamburger2 />
+        <Hamburger />
+        <Loading />
       </>
     )
   }

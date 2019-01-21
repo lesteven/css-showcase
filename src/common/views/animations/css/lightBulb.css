@@ -1,0 +1,100 @@
+:root {
+  --bulb-color: #FAEC4D;
+  --bulb-stem: #D8DFE3;
+}
+
+.light-bulb {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.light-bulb::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 60%; 
+  background: var(--bulb-color);
+  bottom: 5%;
+  left: 25%;
+  border-radius: 50%;
+}
+.light-bulb::after {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  background: var(--bulb-color);
+  -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  top: 15%; 
+  left: 30%;
+}
+.light-bulb-top {
+  width: 25%;
+  height: 20%;
+  position: absolute;
+  z-index: 2;
+  left: 37.5%;
+  top: 0;
+  box-sizing: border-box;
+  background: var(--bulb-stem);
+}
+.light-bulb-top::before, .light-bulb-top::after {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 30%;
+  background: var(--bulb-stem);
+  border-radius: 25%;
+  left: -10%;
+}
+.light-bulb-top::before {
+  bottom: 50%;
+}
+.light-bulb-top::after {
+  bottom: 10%;
+}
+.light-bulb::before, .light-bulb::after { 
+  animation: flicker 5s infinite .1s alternate;
+}
+
+.light-bulb-top, .light-bulb-top::before, .light-bulb-top::after {
+  animation: flickerBulb 5s infinite .1s alternate;
+}
+@keyframes flicker  {
+  0% {
+    background: var(--bulb-color);
+  }
+  100% {
+    background: #d3d3d3;
+  }  
+
+}
+
+@keyframes flickerBulb {
+  0% {
+    background: var(--bulb-stem);
+  }
+  100% {
+    background: #d3d3d3;
+  }  
+
+}
+
+.bulb-wrapper {
+  animation: darken 5s infinite .2s alternate;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@keyframes darken {
+  0% {
+    background: #fdfdfd;
+  }
+  100% {
+    background: #d3d3d3;
+    opacity: .9;
+  }  
+
+}

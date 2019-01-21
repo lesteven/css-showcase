@@ -6,7 +6,7 @@ class Loading extends Component {
     return (
       <div className = 'loading-wrapper'>
         <div className = 'load-box'>
-        <div className = 'loading'></div>
+          <div className = 'loading'></div>
         </div>
       </div>
     )
